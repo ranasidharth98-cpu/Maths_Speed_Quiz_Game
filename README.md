@@ -1,38 +1,11 @@
+# 🧮 Math Speed Quiz Game in Python
 
-import random
-import time
+A lightweight, interactive command-line Python application designed to test and improve mental math speed. The program generates random arithmetic problems, tracks your answers, and measures your total completion time down to a fraction of a second.
 
-OPERATORS = ["+", "-", "*"]
-MIN_OPERAND = 5
-MAX_OPERAND = 15
-TOTAL_PROBLEMS = 12
+---
 
-def generate_problem():
-    left = random.randint(MIN_OPERAND, MAX_OPERAND)
-    right = random.randint(MIN_OPERAND, MAX_OPERAND)
-    operator = random.choice(OPERATORS)
+## ✨ Features
 
-    expr = str(left)+" "+ operator + " " + str(right)
-    answer= eval(expr)
-    return expr, answer
-
-
-input("Press enter to start")
-print("--------------------")
-
-start_time= time.time()
-
-for i in range(TOTAL_PROBLEMS):
-    expr, answer = generate_problem()
-    while True:
-        guess = input("Problem #"+str(i+1)+": " + expr + "= ")
-        if guess == str(answer):
-            break
-
-        
-
-end_time = time.time()
-total_time = round(end_time - start_time, 2)
-
-print ("----------------------------------")
-print("Nice work!, You finished in", total_time, "seconds!")
+- **Randomized Equation Generation:** Dynamically creates problems using addition (`+`), subtraction (`-`), and multiplication (`*`) with customizable operand ranges.
+- **Interactive Validation Loop:** Ensures players input the correct answer before advancing to the next challenge.
+- **Performance Timing:** Utilizes Python's built-in `time` module to record exact start and end timestamps, displaying your final score and completion duration.
