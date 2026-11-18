@@ -1,11 +1,24 @@
-# 🧮 Math Speed Quiz Game in Python
+Step 1: 
+You need a web browser (Chrome, Safari, Edge, Firefox) and a Google account (to log into Google Colab)
 
-Think of this as a digital math flashcard game. It’s a small, interactive program that tests your mental math speed. It hands you 12 random math problems, times how fast you can solve them all, and gives you your final score in seconds.
+Step 2:
+Open your web browser and go to colab.new.
 
-The Random Picker: At the start, the computer randomly picks two numbers,ranging from 5 to 12 and a math sign to create a unique problem.
+Step 3:
+Copy the complete Python code block for the Math Speed Quiz Game.
 
-The Stopwatch: The exact moment you press Enter to start, a digital stopwatch begins running in the background.
+Step 4:
+Go back to the Google Colab tab you opened in Step 2.
+Click inside the large empty text box.
+Paste the entire block of code you just copied.
 
-The Strict Tutor: As it gives you each problem, you have to type the correct answer. If you type the wrong number, it won't let you move on—it keeps asking until you get it right, just like a persistent tutor.
+Step 5:
+Look at the left side of the box where you pasted the code. You will see a round Play button.
+Click that Play button.
+Python will start running the script in the cloud.
 
-The Final Score: Once all 12 problems are successfully solved, the stopwatch stops, calculates your total time down to a fraction of a second, and congratulates you!
+Step 6:
+Look directly beneath the code box. A small text line will appear saying: "Press enter to start"
+Click your mouse inside the output box right below that text, and press your keyboard's Enter key.
+The stopwatch starts! Solve each math problem as it pops up, type your answer, and hit Enter.
+Once you finish all 12 problems, the screen will display your final score and total completion time in seconds.
